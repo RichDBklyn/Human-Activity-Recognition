@@ -45,4 +45,4 @@ names(SubsetDF)[36:68]<-paste("StDv_",names(SubsetDF)[36:68],sep="")
 #based on 180 unique combinations of SubjID (n=30) and Activity (n=6)
 SummaryDF<-aggregate(.~SubjID+Activity,data=SubsetDF,mean)
 #output summary data frame to a text file
-write.table(SummaryDF,"HAR Data by Subject and Activity.txt")
+write.table(SummaryDF,"HAR_Data_by_Subject_and_Activity.txt")
